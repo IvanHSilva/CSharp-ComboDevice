@@ -2,12 +2,13 @@
 
 namespace ComboDevice.Devices {
     public class Printer : Device {
+
         public override void ProcessDoc(string document) {
-            Console.WriteLine($"Scanner processando {document}");
+            Console.WriteLine($"Impressora processando {document}");
         }
 
-        public string Print() {
-            return "Resultado da Impressão";
+        public string Print(string document) {
+            return $"Impressora imprimindo {document}";
         }
     }
 }
